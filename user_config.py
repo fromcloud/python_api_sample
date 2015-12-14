@@ -1,0 +1,4 @@
+apikey='0OSNT-b1TJnU04a0jOrZKdvVXLDmDHtYRX3Ms7ECiTi9GTyojjxAghN5cr7fLUF3buj8ZDyBzeViqlHJiyIVtA'
+secretkey='0KTN3rL6nu91oC9cIC0NjeXt-JUVy5pHVVRFt54MOpYlFNkMFp6QUBJd1KDWabN1qfDzeyEGVV-0WRqW1b0xCw'
+accesskey='edu_ucloudbiz_01@kt.com'
+storagesecret='MTQyNTAyMjk0NjE0MjUwMTkwODA3NTA4'
