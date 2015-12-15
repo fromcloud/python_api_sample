@@ -46,8 +46,8 @@ with open('../userdata_file/make_tomcat.sh', 'r') as myfile:
 
 userdata=base64.encodestring(data).replace('\n','')
 
-name='tomcat1'
-displayname='tomcat1'
+name='tomcat-01'
+displayname='tomcat-01'
 	
 if apikey != "":
 	request={}
