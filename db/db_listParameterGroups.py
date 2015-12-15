@@ -7,7 +7,6 @@ import urllib
 import hashlib
 import hmac
 import base64
-#import os
 import urlparse
 import linecache
 import url_config
@@ -20,26 +19,21 @@ def get_sig_request(params, secretkey, baseurl):
     return baseurl+request_str+'&signature='+sig
 
 
-baseurl = url_config.server_url
+baseurl = url_config.db_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-ipid=''
-
-print "Content-Type: text/plain;charset=utf-8"
-print
-#print
 if apikey != "":
 	request={}
-	request['command']='disassociateIpAddress'
-	request['id']=ipid
+	request['command']='listParameterGroups'
 	request['response']='xml'
 	request['apikey']=apikey
-	
+
 	req_url=get_sig_request(request, secretkey, baseurl)
 	print "Request URL = %s\n" % req_url
 	#res=urllib2.urlopen(final_req)
 	#print res.read()
 	#res.close()
 else:
-	print "apikey none"
+	print ""
+

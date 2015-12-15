@@ -25,12 +25,7 @@ apikey = user_config.apikey
 secretkey = user_config.secretkey
 
 
-# download/streaming
-# ip address / storage container name
-# direct / storage
-# jpn / central
-
-cdnid='ws4110'
+cdnid=''
 
 if apikey != "":
 	request={}

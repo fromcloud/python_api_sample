@@ -7,7 +7,6 @@ import urllib
 import hashlib
 import hmac
 import base64
-#import os
 import urlparse
 import linecache
 import url_config
@@ -20,28 +19,21 @@ def get_sig_request(params, secretkey, baseurl):
     return baseurl+request_str+'&signature='+sig
 
 
-baseurl = url_config.cdn_url
+baseurl = url_config.db_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-svcname='gn4106'
-svctype='streaming'
-purgeurl='http://gn4106vol00-gn4106.ktics.co.kr/gn4106vol00/_definst_/test.mp4/playlist.m3u8'
-
 if apikey != "":
 	request={}
-	request['command']='purgeCmd'
-	request['svcname']=svcname
-	request['svctype']=svctype
-	request['purgerul']=purgeurl
+	request['command']='listInstances'
 	request['response']='xml'
 	request['apikey']=apikey
-	
+
 	req_url=get_sig_request(request, secretkey, baseurl)
 	print "Request URL = %s\n" % req_url
 	#res=urllib2.urlopen(final_req)
 	#print res.read()
 	#res.close()
 else:
-	print "apikey none"
+	print ""
 

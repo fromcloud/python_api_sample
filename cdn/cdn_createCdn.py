@@ -25,16 +25,14 @@ apikey = user_config.apikey
 secretkey = user_config.secretkey
 
 
-# download/streaming
 # ip address / storage container name
 # direct / storage
-# jpn / central
 
 name='mystreaming'
-servicetype='streaming'
+servicetype='streaming'			# download/streaming
 addr='container1'
-origintype='storage'
-zonenm='central'
+origintype='storage'			# ip address / storage container name, storage cantainer must be opened to public
+zonenm='central'				# jpn / central
 
 if apikey != "":
 	request={}

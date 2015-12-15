@@ -23,7 +23,7 @@ baseurl = url_config.server_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-jobid="10babb32-2417-4745-8a81-4ea8f6d667fa"
+jobid=""
 
 if apikey != "":
 	request={}

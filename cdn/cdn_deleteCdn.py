@@ -30,7 +30,7 @@ secretkey = user_config.secretkey
 # direct / storage
 # jpn / central
 
-cdnid='ws4110'
+cdnid=''
 
 if apikey != "":
 	request={}
