@@ -41,12 +41,17 @@ serviceofferingid=''
 # CentOS6.4 64bit Template : c5a68ef2-b230-427a-9ade-a9de930b07fb
 templateid=''
 
+name=''
+displayname=''
+
 if apikey != "":
 	request={}
 	request['command']='deployVirtualMachine'
 	request['serviceofferingid']=serviceofferingid
 	request['templateid']=templateid
 	request['zoneid']=zoneid
+    request['name']=name
+    request['displayname']=displayname
 	request['response']='xml'
 	request['apikey']=apikey
 	

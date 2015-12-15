@@ -47,6 +47,9 @@ yum update -y ca-certificates
 yum install -y epel-release
 '''
 
+name=''
+displayname=''
+
 userdata=base64.encodestring(userdata).replace('\n','')
 	
 if apikey != "":
@@ -56,6 +59,8 @@ if apikey != "":
 	request['templateid']=templateid
 	request['zoneid']=zoneid
 	request['userdata']=userdata
+    request['name']=name
+    request['displayname']=displayname
 	request['response']='xml'
 	request['apikey']=apikey
 	
