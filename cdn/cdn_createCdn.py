@@ -30,8 +30,8 @@ secretkey = user_config.secretkey
 
 name='mystreaming'
 servicetype='streaming'			# download/streaming
-addr='container1'
-origintype='storage'			# ip address / storage container name, storage cantainer must be opened to public
+origintype='storage'			# direct / storage
+addr='container1'				# ip address / storage container name, storage cantainer must be opened to public
 zonenm='central'				# jpn / central
 
 if apikey != "":
