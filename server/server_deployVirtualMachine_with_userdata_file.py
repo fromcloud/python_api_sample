@@ -41,7 +41,7 @@ serviceofferingid=''
 # CentOS6.4 64bit Template : c5a68ef2-b230-427a-9ade-a9de930b07fb
 templateid=''
 
-with open('../userdata_file/test.sh', 'r') as myfile:
+with open('../userdata_file/make_master.sh', 'r') as myfile:
     data=myfile.read()
 
 userdata=base64.encodestring(data).replace('\n','')
