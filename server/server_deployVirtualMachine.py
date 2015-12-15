@@ -50,8 +50,8 @@ if apikey != "":
 	request['serviceofferingid']=serviceofferingid
 	request['templateid']=templateid
 	request['zoneid']=zoneid
-    request['name']=name
-    request['displayname']=displayname
+	request['name']=name
+	request['displayname']=displayname
 	request['response']='xml'
 	request['apikey']=apikey
 	

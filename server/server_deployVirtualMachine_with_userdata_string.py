@@ -59,8 +59,8 @@ if apikey != "":
 	request['templateid']=templateid
 	request['zoneid']=zoneid
 	request['userdata']=userdata
-    request['name']=name
-    request['displayname']=displayname
+	request['name']=name
+	request['displayname']=displayname
 	request['response']='xml'
 	request['apikey']=apikey
 	
