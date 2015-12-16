@@ -2,6 +2,8 @@
 
 import sys
 sys.path.insert(0, "../config/")
+sys.path.insert(0, "../ucloudbiz/")
+import ucloudbiz
 import urllib2
 import urllib
 import hashlib
@@ -11,13 +13,6 @@ import urlparse
 import linecache
 import url_config
 import ast
-
-def get_sig_request(params, secretkey, baseurl):
-    request_str='&'.join(['='.join([k,urllib.quote_plus(params[k])]) for k in params.keys()])
-    sig_str='&'.join(['='.join([k.lower(),urllib.quote_plus(params[k].lower().replace('+','%20'))])for k in sorted(params.iterkeys())])
-    sig=urllib.quote_plus(base64.encodestring(hmac.new(secretkey,sig_str,hashlib.sha1).digest()).strip())
-    return baseurl+request_str+'&signature='+sig
-
 
 fabricurl=url_config.fabric_url
 

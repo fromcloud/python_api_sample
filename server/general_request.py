@@ -12,13 +12,13 @@ import linecache
 import url_config
 import user_config
 
-def get_sig_request(params, secretkey, baseurl):
-    request_str='&'.join(['='.join([k,urllib.quote_plus(params[k])]) for k in params.keys()])
-    print "Request Str = %s\n" % request_str 
-    sig_str='&'.join(['='.join([k.lower(),urllib.quote_plus(params[k].lower().replace('+','%20'))])for k in sorted(params.iterkeys())])
-    print "Signature String = %s\n" % sig_str
+def get_sig_request(request, secretkey, baseurl):
+    request_str='&'.join(['='.join([k,urllib.quote_plus(request[k])]) for k in request.keys()])
+    print request_str
+    sig_str='&'.join(['='.join([k.lower(),urllib.quote_plus(request[k]).replace('+','%20').lower()])for k in sorted(request.iterkeys())])
+    print sig_str
     sig=urllib.quote_plus(base64.encodestring(hmac.new(secretkey,sig_str,hashlib.sha1).digest()).strip())
-    print "Signature = %s\n" % sig
+    print sig
     return baseurl+request_str+'&signature='+sig
 
 
