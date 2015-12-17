@@ -34,7 +34,7 @@ dbmasterpassword='admin12345'	# mysql admin password
 dbname='sakila'					# mysql database name
 dbengineversion='5.6.24'		# mysql version
 usageplantype='hourly'			# billing period = hourly, monthly
-zone='kr-2'						# kr-0 (Seoul-M), kr-1 (Central-A), kr-2 (Central-B)
+zone='kr-1'						# kr-0 (Seoul-M), kr-1 (Central-A), kr-2 (Central-B)
 
 
 if apikey != "":
