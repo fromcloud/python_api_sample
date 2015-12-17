@@ -41,8 +41,8 @@ with open('../userdata_file/make_master.sh', 'r') as myfile:
 
 userdata=base64.encodestring(data).replace('\n','')
 
-name='master-srv'
-displayname='master-srv'
+name='master'
+displayname='master'
 	
 if apikey != "":
 	request={}
