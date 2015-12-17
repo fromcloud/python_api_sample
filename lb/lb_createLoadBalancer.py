@@ -19,7 +19,7 @@ baseurl = url_config.lb_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-name=''	# lb name
+lbname=''	# lb name
 
 if apikey != "":
 	request={}

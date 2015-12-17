@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 lbid=''
 vmid=''
-ip=''
+ip=''			# ip address not ipid
 publicport=''
 privateport=''
 
