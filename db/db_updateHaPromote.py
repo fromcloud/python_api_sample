@@ -32,7 +32,7 @@ if apikey != "":
 
 	req_url=ucloudbiz.get_sig_request(request, secretkey, baseurl)
 	print "Request URL = %s\n" % req_url
-	#res=urllib2.urlopen(final_req)
+	#res=urllib2.urlopen(req_url)
 	#print res.read()
 	#res.close()
 else:
