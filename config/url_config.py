@@ -9,4 +9,4 @@ autoscaleing_url='https://api.ucloudbiz.olleh.com/autoscaling/v1/client/api?'
 db_url='https://api.ucloudbiz.olleh.com/db/v1/client/api?'
 cdn_url='https://api.ucloudbiz.olleh.com/cdn/v1/client/api?'
 storage_url='https://api.ucloudbiz.olleh.com/storage/v1/auth'
-fabric_url="https://uclouddb.ucloudbiz.olleh.com:443/fabric/rest?grpcode="
+fabric_url="https://uclouddb.ucloudbiz.olleh.com:443/fabric/rest?"

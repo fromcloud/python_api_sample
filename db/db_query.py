@@ -17,10 +17,10 @@ import ast
 fabricurl=url_config.fabric_url
 
 hagroupname='edu_ucloudbiz_XX_hagroup!'
-sec='1'										# sec : 1 (public), 0 (private)
-mode='3'									# mode : 2 (Read), 3 (Read/Write)
+sec='1'			# 1 (public access), 0 (private access)
+mode='3'		# 2 (Read mode), 3 (Read/Write mode)
 
-finalurl = fabricurl + hagroupname + "&sec=" + sec + "&mode=" + mode
+finalurl = fabricurl + 'grpcode=' + hagroupname + "&sec=" + sec + "&mode=" + mode
 res=urllib2.urlopen(finalurl)
 codes = res.read().replace('\u0000','').replace('null','').replace('(', '').replace(')', '')
 result=ast.literal_eval(codes)

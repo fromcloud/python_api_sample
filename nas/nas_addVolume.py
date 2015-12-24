@@ -23,8 +23,8 @@ secretkey = user_config.secretkey
 # KOR-Central A     : eceb5d65-6571-4696-875f-5a17949f3317
 # KOR-Central B     : 9845bd17-d438-4bde-816d-1b12f37d5080
 # KOR-Seoul M       : 95e2f517-d64a-4866-8585-5177c256f7c7
-# KOR-HA        : dfd6f03d-dae5-458e-a2ea-cb6a55d0d994
-# JPN           : 3e8ce14a-09f1-416c-83b3-df95af9d6308
+# KOR-HA        	: dfd6f03d-dae5-458e-a2ea-cb6a55d0d994
+# JPN           	: 3e8ce14a-09f1-416c-83b3-df95af9d6308
 
 zoneid=''
 volname=''
