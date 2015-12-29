@@ -22,7 +22,7 @@ secretkey = user_config.secretkey
 hagroupid=''
 hamode=''											# Y=auto, N=manual
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='updateHaMode'
 	request['hagroupid']=hagroupid

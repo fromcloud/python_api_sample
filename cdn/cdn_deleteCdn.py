@@ -27,7 +27,7 @@ secretkey = user_config.secretkey
 
 cdnid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='deleteCdn'
 	request['id']=cdnid

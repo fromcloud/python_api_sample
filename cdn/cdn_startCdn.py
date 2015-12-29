@@ -15,14 +15,16 @@ import linecache
 import url_config
 import user_config
 
-baseurl = url_config.server_url
+baseurl = url_config.cdn_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
+cdnid=''
 
 if apikey:
 	request={}
-	request['command']='listPublicIpAddresses'
+	request['command']='startCdn'
+	request['id']=cdnid
 	request['response']='xml'
 	request['apikey']=apikey
 	
@@ -33,3 +35,4 @@ if apikey:
 	#res.close()
 else:
 	print "apikey none"
+

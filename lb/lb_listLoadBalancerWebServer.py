@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 lbid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='listLoadBalancerWebServers'
 	request['loadbalancerid']=lbid

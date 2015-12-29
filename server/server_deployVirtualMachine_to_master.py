@@ -44,7 +44,7 @@ userdata=base64.encodestring(data).replace('\n','')
 name='master'
 displayname='master'
 	
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='deployVirtualMachine'
 	request['serviceofferingid']=serviceofferingid

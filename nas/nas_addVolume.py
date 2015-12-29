@@ -30,7 +30,7 @@ zoneid=''
 volname=''
 pathname=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='addVolume'
 	request['name']=volname

@@ -26,7 +26,7 @@ semisync='N'										# when hamode=N and semisync=N, async mode is enabled
 hagroupname='edu_ucloudbiz_XX_hagroup!'				# 12~30 character with !@#%^*, this is key for query.
 
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='createHaGroup'
 	request['instanceid']=instanceid

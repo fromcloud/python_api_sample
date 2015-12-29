@@ -25,7 +25,7 @@ ip=''			# public ip address not ipid
 publicport=''
 privateport=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='addLoadBalancerWebServer'
 	request['loadbalancerid']=lbid

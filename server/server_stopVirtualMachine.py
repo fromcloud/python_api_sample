@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 vmid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='stopVirtualMachine'
 	request['id']=vmid

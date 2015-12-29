@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 pfruleid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='deletePortForwardingRule'
 	request['id']=pfruleid

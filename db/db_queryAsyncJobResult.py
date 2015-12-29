@@ -20,7 +20,7 @@ secretkey = user_config.secretkey
 
 jobid=""
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='queryAsyncJobResult'
 	request['jobid']=jobid

@@ -1,5 +1,12 @@
 #!/usr/bin/python
 
+'''
+비동기 call 을 실행한 경우 반환된 jobid 의 상태값을 조회합니다. 
+
+* 조회된 상태값은 jobid를 반환한 원래 호출 api 에 따라 다릅니다. 
+* 
+'''
+
 import sys
 sys.path.insert(0, "../config/")
 sys.path.insert(0, "../ucloudbiz/")
@@ -20,7 +27,7 @@ secretkey = user_config.secretkey
 
 jobid=""
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='queryAsyncJobResult'
 	request['jobid']=jobid

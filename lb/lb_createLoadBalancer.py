@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 lbname=''	# lb name
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='createLoadBalancer'
 	request['zoneid']='eceb5d65-6571-4696-875f-5a17949f3317'

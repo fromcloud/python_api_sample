@@ -39,7 +39,7 @@ templateid=''
 name=''
 displayname=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='deployVirtualMachine'
 	request['serviceofferingid']=serviceofferingid

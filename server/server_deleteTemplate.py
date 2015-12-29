@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 templateid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='deleteTemplate'
 	request['id']=templateid

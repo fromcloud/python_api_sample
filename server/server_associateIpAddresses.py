@@ -27,7 +27,7 @@ secretkey = user_config.secretkey
 # JPN           : 3e8ce14a-09f1-416c-83b3-df95af9d6308
 zoneid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='associateIpAddress'
 	request['zoneid']=zoneid

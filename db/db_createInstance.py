@@ -37,7 +37,7 @@ usageplantype='hourly'			# billing period = hourly, monthly
 zone='kr-1'						# kr-0 (Seoul-M), kr-1 (Central-A), kr-2 (Central-B)
 
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='createInstance'
 	request['instancename']=instancename

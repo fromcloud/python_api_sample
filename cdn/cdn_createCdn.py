@@ -29,7 +29,7 @@ origintype='storage'			# direct / storage
 addr='container1'				# ip address / storage container name, storage cantainer must be opened to public
 zonenm='central'				# jpn / central
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='createCdn'
 	request['name']=name

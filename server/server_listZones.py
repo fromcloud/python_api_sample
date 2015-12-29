@@ -1,5 +1,12 @@
 #!/usr/bin/python
 
+'''
+사용가능한 존들의 리스트를 조회합니다.
+
+* 대부분의 서비스는 존에 의존적입니다. 
+* 서비스를 provisioning 할 때 어떤 존을 대상으로 할지를 결정하는 것이 우선적인 결정사항입니다.
+'''
+
 import sys
 sys.path.insert(0, "../config/")
 sys.path.insert(0, "../ucloudbiz/")

@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 volumeid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='deleteVolume'
 	request['id']=volumeid

@@ -36,7 +36,7 @@ lbname=id_generator()
 zoneid=''
 
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='createLoadBalancer'
 	request['zoneid']=zoneid

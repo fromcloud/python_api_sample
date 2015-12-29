@@ -19,7 +19,7 @@ baseurl = url_config.server_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='listTemplates'
 	request['templatefilter']='selfexecutable'

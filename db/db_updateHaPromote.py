@@ -22,7 +22,7 @@ secretkey = user_config.secretkey
 hagroupid=''	# hagroupid
 instanceid=''	# instance id for promoting
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='updateHaPromote'
 	request['hagroupid']=hagroupid

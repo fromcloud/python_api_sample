@@ -24,7 +24,7 @@ publicport=''
 privateport=''
 vmid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='createPortForwardingRule'
 	request['ipaddressid']=ipid

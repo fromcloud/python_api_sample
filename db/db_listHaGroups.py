@@ -19,7 +19,7 @@ apikey = user_config.apikey
 secretkey = user_config.secretkey
 
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='listHaGroups'
 	request['response']='xml'

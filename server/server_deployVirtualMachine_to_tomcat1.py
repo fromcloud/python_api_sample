@@ -44,7 +44,7 @@ userdata=base64.encodestring(data).replace('\n','')
 name='tomcat-01'
 displayname='tomcat-01'
 	
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='deployVirtualMachine'
 	request['serviceofferingid']=serviceofferingid

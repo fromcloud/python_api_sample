@@ -18,7 +18,7 @@ baseurl = url_config.db_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='listParameterGroups'
 	request['response']='xml'

@@ -1,4 +1,17 @@
 #!/usr/bin/python
+#-*- coding: utf-8 -*-
+
+'''
+사용가능한 VM 상품의 조합 (serviceoffering=스펙, template=OS, diskoffering=디스크)을 
+조회합니다.
+
+* deployVirtualMachine call 을 던지기 전에 사용가능한 상품을 조회합니다.
+* listAvailableProductTypes call은 zoneid 가 필수 파라미터가 아니지만 필수파라미터처럼 
+  전달하는 것이 효율적입니다.
+* listAvailableProductTypes call에서 자신이 만든 custom template 은 조회되지 않지만 
+  해당 템플릿이 공개이고 해당 존에 복사되어 있는 경우 deployVirtualMachine call의 파라미터로
+  전달이 가능합니다. 
+'''
 
 import sys
 sys.path.insert(0, "../config/")

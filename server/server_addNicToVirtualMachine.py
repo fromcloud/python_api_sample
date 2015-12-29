@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 networkid=''
 vmid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='addNicToVirtualMachine'
 	request['networkid']=networkid

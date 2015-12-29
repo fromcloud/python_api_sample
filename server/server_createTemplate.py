@@ -23,7 +23,7 @@ displaytext=''
 name=''
 ostypeid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='createTemplate'
 	request['displaytext']=displaytext

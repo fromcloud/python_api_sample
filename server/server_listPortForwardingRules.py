@@ -21,7 +21,7 @@ secretkey = user_config.secretkey
 
 ipid=''
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='listPortForwardingRules'
 	request['ipaddressid']=ipid

@@ -26,7 +26,7 @@ baseurl = url_config.server_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-if apikey != "":
+if apikey:
 	request={}
 	request['command']='listVirtualMachines'
 	request['state']='Running'
@@ -40,5 +40,5 @@ if apikey != "":
 	#print res.read()
 	#res.close()
 else:
-	print ""
+	print "apikey none"
 
