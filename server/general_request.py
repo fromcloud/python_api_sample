@@ -27,11 +27,9 @@ apikey = user_config.apikey
 secretkey = user_config.secretkey
 
 if apikey:
-	expirationtime = datetime.utcnow() + timedelta(seconds=int(600))
 	request={}
 	request['command']='listVirtualMachines'
 	request['state']='Running'
-	request['expires']=expirationtime.strftime('%Y-%m-%dT%H:%M:%S+0900')
 	request['response']='xml'
 	request['apikey']=apikey
 	request['signatureVersion']='3'
