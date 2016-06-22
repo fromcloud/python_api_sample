@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+
 import sys
 sys.path.insert(0, "../config/")
 sys.path.insert(0, "../ucloudbiz/")
@@ -15,21 +16,13 @@ import linecache
 import url_config
 import user_config
 
-baseurl = url_config.lb_url
+baseurl = url_config.server_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
-lbname=''	# lb name
-
 if apikey:
 	request={}
-	request['command']='createLoadBalancer'
-	request['zoneid']='9845bd17-d438-4bde-816d-1b12f37d5080'
-	request['name']=lbname
-	request['loadbalanceroption']='roundrobin'
-	request['serviceport']='80'
-	request['servicetype']='http'
-	request['healthchecktype']='tcp'
+	request['command']='listNetworks'
 	request['response']='xml'
 	request['apikey']=apikey
 	
