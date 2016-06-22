@@ -25,8 +25,6 @@ if apikey:
 	request['state']='Running'
 	request['response']='xml'
 	request['apikey']=apikey
-	request['signatureVersion']='3'
-	print "request dictionary = %s \n" % request
 
 	req_url=ucloudbiz.get_sig_request(request, secretkey, baseurl)
 	print "Request URL = %s\n" % req_url
