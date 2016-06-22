@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-
 import sys
 sys.path.insert(0, "../config/")
 sys.path.insert(0, "../ucloudbiz/")
@@ -16,20 +15,21 @@ import linecache
 import url_config
 import user_config
 
-baseurl = url_config.server_url
+baseurl = url_config.watch_url
 apikey = user_config.apikey
 secretkey = user_config.secretkey
 
 if apikey:
 	request={}
-	request['command']='listZones'
+	request['command']='listMetrics'
 	request['response']='xml'
 	request['apikey']=apikey
 	
 	req_url=ucloudbiz.get_sig_request(request, secretkey, baseurl)
 	print "Request URL = %s\n" % req_url
-	#res=urllib2.urlopen(req_url)
-	#print res.read()
-	#res.close()
+	res=urllib2.urlopen(req_url)
+	print res.read()
+	res.close()
 else:
 	print "apikey none"
+

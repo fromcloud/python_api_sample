@@ -1,0 +1,12 @@
+order of call
+
+db_listParameterGroups.py
+db_createInstance.py
+db_listInstances.py 
+db_createHaGroup.py
+db_listHaGroups.py
+db_updateHaPromote.py
+
+
+db_connect_sample    db_createInstance.py  db_listInstances.py        db_queryAsyncJobResult.py  db_updateHaMode.py     REAME            sakila-schema.sql
+db_createHaGroup.py  db_listHaGroups.py    db_listParameterGroups.py  db_query.py                db_updateHaPromote.py  sakila-data.sql
