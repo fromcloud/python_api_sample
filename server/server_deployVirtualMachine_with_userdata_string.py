@@ -25,21 +25,22 @@ secretkey = user_config.secretkey
 # KOR-Seoul M       : 95e2f517-d64a-4866-8585-5177c256f7c7
 # KOR-HA        : dfd6f03d-dae5-458e-a2ea-cb6a55d0d994
 # JPN           : 3e8ce14a-09f1-416c-83b3-df95af9d6308
-zoneid=''
+zoneid='9845bd17-d438-4bde-816d-1b12f37d5080'
 
 # Service Offering List ( listServiceOfferings API )
 # 1x1 ServiceOffering : c504e367-20d6-47c6-a82c-183b12d357f2
-# 8x8 ServiceOffering : 049ab4c2-32ed-4310-83de-a3789d578e3c
-serviceofferingid=''
+serviceofferingid='c504e367-20d6-47c6-a82c-183b12d357f2'
 
 # Template List ( listTemplates API )
-# CentOS6.4 64bit Template : c5a68ef2-b230-427a-9ade-a9de930b07fb
-templateid=''
+# CentOS6.5 64bit Template : 42004277-7cf4-4ef1-be28-024a187ea0f8
+templateid='42004277-7cf4-4ef1-be28-024a187ea0f8'
 
 userdata='''#!/bin/bash
 
 yum update -y ca-certificates
 yum install -y epel-release
+yum install -y httpd && chkconfig httpd on && service httpd start
+
 '''
 
 name=''
