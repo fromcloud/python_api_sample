@@ -3,6 +3,7 @@
 import sys
 sys.path.insert(0, "../config/")
 sys.path.insert(0, "../ucloudbiz/")
+import ucloudbiz
 import urllib2
 import urllib
 import hashlib
