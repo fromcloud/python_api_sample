@@ -29,7 +29,8 @@ zoneid='9845bd17-d438-4bde-816d-1b12f37d5080'
 
 # Service Offering List ( listServiceOfferings API )
 # 1x1 ServiceOffering : c504e367-20d6-47c6-a82c-183b12d357f2
-serviceofferingid='c504e367-20d6-47c6-a82c-183b12d357f2'
+#serviceofferingid='c504e367-20d6-47c6-a82c-183b12d357f2'
+serviceofferingid='d00301b7-1965-4ba7-9c18-450b65409163'
 
 # Template List ( listTemplates API )
 # CentOS6.5 64bit Template : 42004277-7cf4-4ef1-be28-024a187ea0f8
